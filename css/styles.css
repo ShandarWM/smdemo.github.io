@@ -1,0 +1,14 @@
+body {
+  height:1800px;
+  font-size: 40pt;
+  background: #0a071c;
+  background-image:url(../img/background.jpg);
+}
+
+h1 {
+  color: #fef;
+}
+
+p {
+  color:#fef
+}
