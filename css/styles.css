@@ -1,14 +1,85 @@
+h1,p,div{
+  text-shadow: 0.1em 0.1em 0.2em black;
+  color:White;
+  font-family: sans-serif ;
+}
+
+body,div,img,footer{
+  width:100%;
+  padding: 0 0 0 0px;
+  background-color: #000;
+}
+
 body {
-  height:1800px;
-  font-size: 40pt;
-  background: #0a071c;
+  height:100%;
+  width:100%;
+  font-size: 22pt;
   background-image:url(../img/background.jpg);
 }
 
+div#spot1a,#spot2a,#spot3a {
+  position: relative;
+  margin:0 0 0 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+div#spot1b, #spot2b, #spot3b {
+  display: block;
+  margin: 0px 0px 0px;
+  padding: 14 28 12px;
+  background-color:#333;
+  height: auto;
+}
+
+div#spot1a{
+  
+}
+
 h1 {
-  color: #fef;
+  font-size: 30px;
+  color: White;
+  
 }
 
 p {
-  color:#fef
+  font-size: 18px;
+  text-decoration:none;
+  color: White;
+}
+p4,p5,p6{
+  font-size:11px;
+}
+
+footer{
+  display: block;
+  background-color: #333;
+  margin: 30px 0 10px;
+  
+}
+
+#tbanner {
+  z-index: 7;
+  background-color: #333;
+  height: 40px;
+  position: fixed;
+  top: 3px;
+  margin: 0px 0 0px;
+  padding: 0 0 0 0px;
+}
+
+#menuicon {
+  height: 34px;
+  width: 36px;
+  z-index: 5;
+  padding: 15 15 5 5px;
+  margin: 15 15 :5 5px;
+  background-color:#333;
+}
+
+div#mbar1, #mbar2, #mbar3 {
+  z-index: 6;
+  width: 35px;
+  height: 5px;
+  background-color: White;
+  margin: 6px 3px 0;
 }
