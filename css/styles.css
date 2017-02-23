@@ -60,8 +60,7 @@ footer{
 #tbanner {
   z-index: 7;
   background-color: #333;
-  height: 40px;
-  position: fixed;
+  height: 40px;  position: fixed;
   top: 3px;
   margin: 0px 0 0px;
   padding: 0 0 0 0px;
@@ -98,14 +97,14 @@ li {
 
 li a, .dropbtn {
     display: inline-block;
-    color: white;
+    color: Black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: Lgray;
 }
 
 li.dropdown {
