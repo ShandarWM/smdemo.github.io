@@ -97,14 +97,14 @@ li {
 
 li a, .dropbtn {
     display: inline-block;
-    color: Black;
+    color: White;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: Lgray;
+    background-color:LightGray;
 }
 
 li.dropdown {
@@ -114,14 +114,15 @@ li.dropdown {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #444;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
+    color: White;
+	
     padding: 12px 16px;
     text-decoration: none;
     display: block;
