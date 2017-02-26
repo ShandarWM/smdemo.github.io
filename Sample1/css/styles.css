@@ -1,0 +1,97 @@
+body {
+  height:800px;
+  font-size: 40pt;
+  background: #0a071c;
+  background-image:url(../First/img/background.jpg);
+}
+summary {
+  font-size: 14pt;
+}
+
+aside nav {
+  
+  margin: 0 0 35px 0;
+  padding: 0;
+  background: none;
+  position: relative
+  position: fixed;
+}
+
+aside nav button {
+  margin: 0 6px 0 6px;
+  float: center;
+  position: relative;
+  width: 45px; height:22px;
+  border-radius: 10px;
+  
+}
+
+p {
+  color:#503e80;
+  font-size: 15pt;
+}
+
+p1 {
+  color: #fff;
+  font-size:15pt;
+}
+
+h1 {
+  color: #0f2334 ;
+  font-size: 17pt;
+}
+
+footer{
+  display: block;
+  background-color: #0A0872;
+  margin: 30px 0 40px;
+  box-shadow: inset 0 0 25px #000066, 0 0 30px #0000b2, inset 0 45px 45px -35px #94d3e5;
+  border-radius: 35px;
+  background: -ms-linear-gradient(top, #0000b2 0%, #000066 100%);
+}
+nav {
+  display:block;
+  background-color: #0A0872;
+  margin:30px 0 40px;
+  box-shadow: inset 0 0 25px #000066, 0 0 30px #0000b2, inset 0 45px 45px -35px #94d3e5;
+  border-radius:35px;
+  background: -ms-linear-gradient(top, #0000b2 0%, #000066 100%);
+  filter: provide:DXImageTransform.Microsoft.gradient(startColorstr=#ffdbed, endColorstr=#DA3e3e, GradientType=0);
+  
+}
+nav#menu ul {
+  text-align:center;
+  text-height:40px;
+  height: 60px;
+  margin: auto;
+  display: table;
+}
+
+nav#menu ul li {
+  position: relative; display:inline;
+  padding-top:55px;
+}
+
+nav#menu ul li a {
+  font-size: 24px;
+  display: block;
+  float: left;
+  line-height: 30px;
+  padding: 0 25px;
+  color: #fff;
+}
+
+aside {
+  width: 230px;
+  float: right;
+  position: relative;
+  top: -30px;
+  background: #0000b2;
+  background: -ms-linear-gradient(top, #0000b2 0%, #000066 100%);
+  margin-bottom: 20px;
+  padding: 2px 15px 15px 20px;
+  border-radius: 15px;
+  z-index: 1;
+  box-shadow: 1px 1px 10px #0000FF;
+  
+}

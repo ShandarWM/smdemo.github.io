@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/styles.css" rel="stylesheet">
+	<script>
+	  var V = 0;
+	  var tubeData = ['https://www.youtube.com/embed/ZiRuj2_czzw', 'https://www.youtube.com/embed/wrDj5XvZXX4', 'https://www.youtube.com/embed/Yh5RSv52g6U'];
+	  function nextTube() {
+            console.log(V);
+            console.log(tubeData[V]);
+            console.log(tubeData.length);
+            V = V + 1;
+            if (V == tubeData.length) {
+                V = 0;
+            }
+            document.getElementById('tv').src.replace = tubeData[V];
+
+            var iframe = document.getElementById('tv');
+            iframe.src = tubeData[V];
+            iframe.src = iframe.src;
+            //("#iframetv").src.replace(tubeData);
+            
+        }
+       
+        function prevTube() {
+            if (V == 0) {
+                V = (tubeData.length - 1);
+            }
+            else {
+                V = V - 1;
+            }
+            
+            var iframe = document.getElementById('tv');
+
+            if (V == 'undefined') {
+                V = (tubeData.length - 1);
+            }
+
+            console.log(V);
+            console.log(tubeData[V]);
+            console.log(tubeData.length);
+
+            document.getElementById('tv').src.replace = tubeData[V];
+            iframe.src = tubeData[V];
+            iframe.src = iframe.src;
+            //("#iframetv").src.replace(tubeData);
+        }
+	</script>  
+	<body>
+	<nav id="menu">
+	  <ul>
+		<li><a href="../index.html">Home</a></li>
+		<li><a href="aboutme.html">About</a></li>
+	  </ul>
+	</nav>
+  </head>
+  
+    <center>
+      <h1>Shandar W. Muller</h1>
+      <p>This is my Demo website</p>
+	  <img width="550" height="400" src="First/img/9628771965.jpg">
+	  <img src="First/img/9628772145.jpg" width="550" height="400" margin="left">
+	  <img src="First/img/9628772078.jpg" width="550" height="400">
+	  
+	</center>
+  
+	<aside>
+	  <nav>
+		<center>
+		<h1>Mezmerizing Videos</h1>
+		  <summary>Welcome</summary>	  
+			
+			  <iframe id="tv" width="220" height="200" scr="https://www.youtube.com/embed/wrDj5XvZXX4" frameborder="1"></iframe>
+			  <nav id="vButtons">
+				<button id="previous" name="Previous" onclick="prevTube()"><img src="First/img/video/rewind.png"/></button>
+				<button id="next" name="Next" onclick="nextTube()"><img src="First/img/video/forward.png"/> </button>
+			  </nav>
+			  <br/>
+				<hr>
+			</center>	  
+	  </nav>
+	</aside>
+	
+
+  <hr>
+<footer>
+  <nav>
+	<center>
+	  <p1>
+	Nighthawk
+	  </p1>
+	</center>
+  </nav>
+</footer>
+	
+</html>		

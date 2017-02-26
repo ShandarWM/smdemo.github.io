@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset=UTF-8>
+    <meta name="keywords" content="html5, javascript, css3, 70-480, rush, subdivisions" />
+    <meta name="description" content="Demo Website" />
+    <meta name="author" content="Shandar W Muller" />
+
+	<title>A Collaboration of all my work</title>
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" /> 
+
+    <script type="text/javascript" src="js/70-480_03.js"></script>
+    <script type="text/javascript" src="js/70-480_04.js"></script>
+    
+    <script>
+        var V = 0;
+        var tubeData = ['https://www.youtube.com/embed/ZiRuj2_czzw', 'https://www.youtube.com/embed/wrDj5XvZXX4', 'https://www.youtube.com/embed/Yh5RSv52g6U'];
+    </script>
+    
+    <script>
+        function nextTube() {
+            console.log(V);
+            console.log(tubeData[V]);
+            console.log(tubeData.length);
+            V = V + 1;
+            if (V == tubeData.length) {
+                V = 0;
+            }
+            document.getElementById('tv').src.replace = tubeData[V];
+
+            var iframe = document.getElementById('tv');
+            iframe.src = tubeData[V];
+            iframe.src = iframe.src;
+            //("#iframetv").src.replace(tubeData);
+            
+        }
+       
+        function prevTube() {
+            if (V == 0) {
+                V = (tubeData.length - 1);
+            }
+            else {
+                V = V - 1;
+            }
+            
+            var iframe = document.getElementById('tv');
+
+            if (V == 'undefined') {
+                V = (tubeData.length - 1);
+            }
+
+            console.log(V);
+            console.log(tubeData[V]);
+            console.log(tubeData.length);
+
+            document.getElementById('tv').src.replace = tubeData[V];
+            iframe.src = tubeData[V];
+            iframe.src = iframe.src;
+            //("#iframetv").src.replace(tubeData);
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+	    <hgroup>
+		    <h1>The Domain of Space...</h1>
+		    <h2>...passing the 70-480 exam, in style!</h2>
+	    </hgroup>
+        <div id="SiteImage">
+            <img id="gg-logo" src="img/ggs.png" />
+        </div>
+	    <nav id="menu">
+		    <ul>
+			    <li><a href=#>Home</a></li>
+			    <li><a href=#>HTML5</a></li>
+                <li><a href=#>CSS3</a></li>
+			    <li><a href=#>JavaScript</a></li>
+			    <li><a href=#>Demo's</a></li>
+		    </ul>
+	    </nav>
+    </header>
+
+    <div id=content>
+        <section>            
+            <article>
+			    <header>
+				    <h1>Exam Preparation Tip #2</h1>
+                 <!--   <img id="amaraphoto" src="img/amaraApple.png" width="40px" height="43" />-->
+			    </header>
+
+			    <p>Read each question at least twice. It could mean the difference between right and wrong!</p>
+
+			    <footer>
+				    <em>Written by:</em> <strong>Garth Schulte</strong>
+                    <a class="more" href=#>...continue reading</a>
+			    </footer>
+		    </article>
+
+		    <article>
+			    <header>
+				    <h1>Your Exam Routine?</h1>
+			    </header>
+
+			    <p>We want your <a href="#">feedback</a>! How do you prepare for an exam?</p>
+
+			    <footer>
+				    <em>Written by:</em> <strong>Team Nuggets</strong>
+                    <a class="more" href=#>...continue reading</a>
+			    </footer>
+		    </article>
+
+           <article>
+			    <header>
+				    <h1>Exam Preparation Tip #1</h1>
+			    </header>
+
+			    <p>Get a good nights sleep and eat a healthy meal before an exam!</p>
+
+			    <footer>
+				    <em>Written by:</em> <strong>Forum Contributor</strong>
+                    <a class="more" href=#>...continue reading</a>
+			    </footer>
+		    </article>
+        </section>
+	</div>
+    <script>
+        var tVideo = "https://www.youtube.com/embed/ZiRuj2_czzw";
+    </script>
+
+	<aside>	
+		<nav>
+			<h1>Mezmorizing Videos</h1>
+            <details id="video">
+                <summary>Welcome!</summary>
+                <section>
+                    <center>
+                        <iframe id="tv" width="220" height="200" src="https://www.youtube.com/embed/ZiRuj2_czzw" frameborder="0"></iframe>
+                        <nav id="tubeVideo">
+                            <button id="previous" name="Prev" onclick="prevTube()"><img src="img/video/rewind.png"/></button>
+                            <button id="next" name="Next" onclick="nextTube()"><img src="img/video/forward.png"/></button>
+                        </nav>
+                        <br/>
+                        <hr/>
+                        <video id="video_player" height="120" width="230">
+
+                            
+                            <source src="media\video.ogv" type="video/ogg" >
+                            <source src="media\video.mp4" type="video/mp4" >
+                            HTML5
+                            <code>video</code> unsupported.
+                            <a href="media/video.mp4">Download</a> instead.
+                        </video>
+
+                        <nav id="video_controls">
+
+                            <button id="restart" onclick="document.getElementById('video_player').currentTime = 0"><img src="img/video/restart.png" /></button>
+                            <button id="rewind" onclick="document.getElementById('video_player').currentTime-=2"><img src="img/video/rewind.png" /></button>
+                            <button id="play" onclick="playVideo()"><img id="playpause_img" src="img/video/play.png" /></button>
+                            <button id="forward" onclick="document.getElementById('video_player').currentTime+=2"><img src="img/video/forward.png" /></button>
+                        </nav>
+                    </center>
+                </section>
+            </details>
+		</nav>	
+
+        <section>
+          <h1>Social Media</h1>
+		  <ul class="social-media">		  
+		  	<li class="icon-fb"></li>
+		  	<li class="icon-google"></li>
+		  	<li class="icon-youtube"></li>
+		  	<li class="icon-twitter"></li>
+		  	<li class="icon-linkedin"></li>		  	
+		  </ul>
+        </section>
+	</aside>
+
+    <footer>
+	    <p class=copyright>Copyright &copy; <strong>Company Name</strong>. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
