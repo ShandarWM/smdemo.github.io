@@ -4,17 +4,206 @@ h1,p,div{
   font-family: sans-serif ;
 }
 
-body,div,img,footer{
+h1 {
+  font-size: 12px;
+}
+
+a,p  {
+  font-size:11px;
+}
+
+/* Parallax base styles
+  --------------------------------------------- */
+
+  .parallax {
+    height: 420px; /* fallback for older browsers */
+    height: 80vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+  }
+
+  .parallax__group {
+    position: relative;
+    /*height: 500px; /* fallback for older browsers */
+    height: 60vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .parallax__layer--comet {
+	-webkit-transform:: translateZ(110px) scale(.5);
+	transform: translateZ(110px) scale(.5);
+	z-index: 5;
+  }
+  
+  .parallax__layer--fore {
+    -webkit-transform: translateZ(90px) scale(.7);
+    transform: translateZ(90px) scale(.7);
+    z-index: 1;
+  }
+
+  .parallax__layer--base {
+    -webkit-transform: translateZ(-100);
+    transform: translateZ(-100);
+    z-index: 4;
+  }
+
+  .parallax__layer--back {
+    -webkit-transform: translateZ(-300px) scale(2);
+    transform: translateZ(-300px) scale(2);
+    z-index: 3;
+  }
+
+  .parallax__layer--deep {
+    -webkit-transform: translateZ(-600px) scale(3);
+    transform: translateZ(-600px) scale(3);
+    z-index: 2;
+  }
+
+  
+  /* styles groups individually */
+   .parallax__layer--fore {
+    height:180vh;
+  }
+  
+  
+  
+  #group1 {
+    z-index: 5; /* slide over group 2 */
+  }
+  #group1 .parallax__layer--base {
+	background-color: transparent;
+	background-image: url('../img/stars1.png');
+	opacity: 1;
+	background-position: -250px 0px ;
+	
+  }
+
+  #group1 .parallax__layer--fore {
+	background-color: transparent;
+	overflow: visible;
+	background-image: url('../img/stars2.png');
+	background-size: 130%;
+	opacity: 1;
+	background-position: -80px 0px ;
+  }
+  
+  #group2 {
+    z-index: 3; /* slide under groups 1 and 3 */
+  }
+  
+  #group2 .parallax__layer--fore {
+	background-color: transparent;
+	overflow: visible;
+	background-image: url('../img/stars2.png');
+	background-size: 130%;
+	opacity: 1;
+	background-position: -80px 0px ;
+  }
+  
+  #group2 .parallax__layer--back {
+    background-color: transparent;
+	
+  }
+
+  #group2 .parallax__layer--base {
+	background-image: url('../img/stars1.png');
+	opacity: 1;
+	background-position: -250px 0px ;
+  }
+  
+  #group3 {
+    z-index: 4; /* slide over group 2 and 4 */
+  }
+  
+  #group3 .parallax__layer--fore {
+	background-color: transparent;
+	overflow: visible;
+	background-image: url('../img/stars2.png');
+	background-size: 130%;
+	opacity: 1;
+	background-position: -80px 0px ;
+  }
+  
+  #group3 .parallax__layer--base {
+    background-color: transparent;
+	background-image: url('../img/stars1.png');
+	opacity: 1;
+	background-position: -250px 0px ;
+  }
+  
+  #group4 .parallax__layer--fore {
+	background-color: transparent;
+	overflow: visible;
+	background-image: url('../img/stars2.png');
+	background-size: 130%;
+	opacity: .7;
+	background-position: 0px 0px ;
+  }
+  
+  #group4 .parallax__layer--deep {
+    background-color: transparent;
+	background-image: url(../img/starsbgl.jpg);
+	background-size: 70%;
+	background-position: top ;
+	opacity: 1;
+	background-position: 0px 0px ;
+	height: 200vh;
+	bottom: 0px;
+	top 0px;
+  }
+
+  #group4 .parallax__layer--back {
+	background-image: url(../img/sun.png);
+	background-position: 0px 10px ;
+	background-repeat: no-repeat;
+	opacity: .9;
+	background-size: 40%;
+	height: 300vh;
+	overflow: visible;
+  }
+  
+  #group4 .parallax__layer--base {
+	background-image: url('../img/stars1.png');
+	opacity: 1;
+	background-position: -250px 0px ;
+  }
+  
+  
+body,footer{
   width:100%;
   padding: 0 0 0 0px;
   background-color: #000;
 }
 
+div {
+  padding: 0 0 0 0px;
+}
+
+img{
+  width: 100%;
+}
+
+body, html {
+    overflow: hidden;
+  }
+
+
 body {
   height:100%;
   width:100%;
   font-size: 22pt;
-  background-image:url(../img/background.jpg);
+  /*background-image:url(../img/starsbgl.jpg);*/
 }
 
 div#spot1a,#spot2a,#spot3a {
@@ -36,16 +225,17 @@ div#spot1a{
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 20px;
   color: White;
   
 }
 
 p {
-  font-size: 18px;
+  font-size: 15px;
   text-decoration:none;
   color: White;
 }
+
 p4,p5,p6{
   font-size:11px;
 }
@@ -98,6 +288,7 @@ li {
 li a, .dropbtn {
     display: inline-block;
     color: White;
+	font-size: 11px;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
