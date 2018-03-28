@@ -13,7 +13,12 @@ h1 {
 
 #Thead{
   text-align: center;
-  margin-left: 50%;
+  width: 100%;
+  
+}
+
+#titleB {
+  font-size:11px;
 }
 
 a,p  {
@@ -203,7 +208,7 @@ a,p  {
 	background-size: 130%;
 	opacity: .7;
 	background-position: -80px 0px ;
-	padding-top:140px;
+	padding-top:160px;
 	
   }
   
@@ -230,6 +235,7 @@ a,p  {
 	background-size: 130%;
 	opacity: .7;
 	background-position: -80px 0px ;
+	padding-top: 20px;
 	height: 200vh;
   }
   
@@ -261,15 +267,15 @@ a,p  {
 	background-size: 130%;
 	opacity: .7;
 	background-position: -80px 0px ;
-	height:525vh;
+	height:425vh;
   }
 
   #group7 .parallax__layer--back {
 	background-image: url('../img/sun.png');
-	background-position: 130px 10px ;
+	background-position: 10px 10px ;
 	background-repeat: no-repeat;
-	opacity: .9;
-	background-size: 40%;
+	opacity: .7;
+	background-size: 20%;
 	height: 200vh;
 	overflow: visible;
   }
