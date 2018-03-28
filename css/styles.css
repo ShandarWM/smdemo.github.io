@@ -18,7 +18,7 @@ h1 {
 }
 
 #titleB {
-  font-size:11px;
+  font-size:12px;
 }
 
 a,p  {
@@ -101,7 +101,7 @@ a,p  {
   }
   #group1 .parallax__layer--base {
 	background-color: transparent;
-	background-image: url('img/stars1.png');
+	background-image: url('/img/stars1.png');
 	opacity: 1;
 	background-position: -250px 0px ;
 	
@@ -110,7 +110,7 @@ a,p  {
   #group1 .parallax__layer--fore {
 	background-color: transparent;
 	overflow: visible;
-	background-image: url('img/stars2.png');
+	background-image: url('/img/stars2.png');
 	background-size: 130%;
 	opacity: 1;
 	background-position: -80px 0px ;
@@ -123,7 +123,7 @@ a,p  {
   #group2 .parallax__layer--fore {
 	background-color: transparent;
 	overflow: visible;
-	background-image: url('img/stars2.png');
+	background-image: url('/img/stars2.png');
 	background-size: 130%;
 	opacity: 1;
 	background-position: -80px 0px ;
@@ -135,7 +135,7 @@ a,p  {
   }
 
   #group2 .parallax__layer--base {
-	background-image: url('img/stars1.png');
+	background-image: url('/img/stars1.png');
 	opacity: 1;
 	background-position: -250px 0px ;
   }
@@ -147,7 +147,7 @@ a,p  {
   #group3 .parallax__layer--fore {
 	background-color: transparent;
 	overflow: visible;
-	background-image: url('img/stars2.png');
+	background-image: url('/img/stars2.png');
 	background-size: 130%;
 	opacity: 1;
 	background-position: -80px 0px ;
@@ -155,7 +155,7 @@ a,p  {
   
   #group3 .parallax__layer--base {
     background-color: transparent;
-	background-image: url('img/stars1.png');
+	background-image: url('/img/stars1.png');
 	opacity: 1;
 	background-position: -250px 0px ;
   }
@@ -163,7 +163,7 @@ a,p  {
   #group4 .parallax__layer--fore {
 	background-color: transparent;
 	overflow: visible;
-	background-image: url('img/stars2.png');
+	background-image: url('/img/stars2.png');
 	background-size: 130%;
 	opacity: .7;
 	background-position: 0px 0px ;
@@ -171,7 +171,7 @@ a,p  {
   
   #group4 .parallax__layer--deep {
     background-color: transparent;
-	background-image: url(img/starsbgl.jpg);
+	background-image: url(/img/starsbgl.jpg);
 	background-size: 70%;
 	background-position: top ;
 	opacity: 1;
@@ -182,7 +182,7 @@ a,p  {
   }
 
   #group4 .parallax__layer--back {
-	background-image: url(img/sun.png);
+	background-image: url(/img/sun.png);
 	background-position: 0px 10px ;
 	background-repeat: no-repeat;
 	opacity: .9;
@@ -192,7 +192,7 @@ a,p  {
   }
   
   #group4 .parallax__layer--base {
-	background-image: url('img/stars1.png');
+	background-image: url('/img/stars1.png');
 	opacity: 1;
 	background-position: -250px 0px ;
   }
@@ -204,7 +204,7 @@ a,p  {
   #group5 .parallax__layer--fore {
 	background-color: transparent;
 	overflow: visible;
-	background-image: url('img/stars2.png');
+	background-image: url('/img/stars2.png');
 	background-size: 130%;
 	opacity: .7;
 	background-position: -80px 0px ;
@@ -214,12 +214,12 @@ a,p  {
   
   #group5 .parallax__layer--base {
     background-color: transparent;
-	background-image: url('img/stars2.png');
+	background-image: url('/img/stars2.png');
 	opacity: .5;
   }
 
   #group5 .parallax__layer--base {
-	background-image: url('img/stars1.png');
+	background-image: url('/img/stars1.png');
 	opacity: 1;
 	background-position: -250px 0px ;
   }
@@ -231,7 +231,7 @@ a,p  {
   #group6 .parallax__layer--fore {
 	background-color: transparent;
 	overflow: visible;
-	background-image: url('img/stars2.png');
+	background-image: url('/img/stars2.png');
 	background-size: 130%;
 	opacity: .7;
 	background-position: -80px 0px ;
@@ -241,7 +241,7 @@ a,p  {
   
   #group6 .parallax__layer--back {
     background-color: transparent;
-	background-image: url('img/nebula1.png');
+	background-image: url('/img/nebula1.png');
 	background-repeat: no-repeat;
 	background-position: 0px 0px ;
 	opacity: .4;
@@ -250,7 +250,7 @@ a,p  {
   }
 
   #group6 .parallax__layer--base {
-	background-image: url('img/stars1.png');
+	background-image: url('/img/stars1.png');
 	opacity: .9;
 	background-position: -250px 0px ;
 	height: 200vh;
@@ -263,7 +263,7 @@ a,p  {
   #group7 .parallax__layer--fore {
 	background-color: transparent;
 	overflow: visible;
-	background-image: url('img/stars2.png');
+	background-image: url('/img/stars2.png');
 	background-size: 130%;
 	opacity: .7;
 	background-position: -80px 0px ;
@@ -271,7 +271,7 @@ a,p  {
   }
 
   #group7 .parallax__layer--back {
-	background-image: url('img/sun.png');
+	background-image: url('/img/sun.png');
 	background-position: 10px 10px ;
 	background-repeat: no-repeat;
 	opacity: .7;
@@ -281,7 +281,7 @@ a,p  {
   }
   
   #group7 .parallax__layer--base {
-	background-image: url('img/stars1.png');
+	background-image: url('/img/stars1.png');
 	opacity: .9;
 	background-position: -250px 0px ;
 	height: 500vh;
