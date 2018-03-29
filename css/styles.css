@@ -171,7 +171,7 @@ a,p  {
   
   #group4 .parallax__layer--deep {
     background-color: transparent;
-	background-image: url('/img/Starsbgl.jpg');
+	background-image: url('../img/Starsbgl.jpg');
 	background-size: 70%;
 	background-position: top ;
 	opacity: 1;
@@ -182,7 +182,7 @@ a,p  {
   }
 
   #group4 .parallax__layer--back {
-	background-image: url('img/Sun.png');
+	background-image: url('../img/Sun.png');
 	background-position: 0px 10px ;
 	background-repeat: no-repeat;
 	opacity: .9;
