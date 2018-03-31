@@ -317,7 +317,10 @@ body {
   font-size: 22pt;
   background-color: Black;
   background-image:url(../img/4.jpg);
-  background-position: 0px 500px;
+  transform: scaleX(-1);
+  background-repeat: no-repeat;
+  background-position: 0px 400px;
+  background-size: 100% 25%;
 }
 
 div#spot1a,#spot2a,#spot3a {
