@@ -295,7 +295,6 @@ a,p  {
   
 body,footer{
   padding: 0 0 0 0px;
-  height: auto;
 }
 
 div {
@@ -360,7 +359,10 @@ footer{
   display: block;
   background-color: transparent;
   margin: 0px 0 0px;
-  padding: 1px 0px 1px ;
+  padding: 0px 0px 0px ;
+  bottom:0px;
+  height: 60px;
+  position:absolute;
 }
 
 #tbanner {
