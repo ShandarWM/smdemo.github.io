@@ -18,7 +18,7 @@ h1 {
 }
 
 #titleB {
-  font-size:13px;
+  font-size:17px;
 }
 
 a,p  {
@@ -288,10 +288,13 @@ a,p  {
 	background-image: url('../img/Stars1.png');
 	opacity: 1;
 	background-position: 1000px 0px ;
-	position:500px 0px;
-	height: 50vh;
+	position:-200px 0px;
+	height: 100vh;
   }
   
+  .last{
+	background-image: url('../img/Stars1.png');
+  }
   
 body,footer{
   padding: 0 0 0 0px;
@@ -318,7 +321,7 @@ body {
   background-image:url(../img/4.jpg);
   transform: scaleX(-1);
   background-repeat: no-repeat;
-  background-position: 0px 400px;
+  background-position: 8px 400px;
   background-size: 100% 25%;
 }
 
@@ -352,7 +355,7 @@ p {
 }
 
 p4,p5,p6{
-  font-size:14px;
+  font-size:15px;
 }
 
 footer{
